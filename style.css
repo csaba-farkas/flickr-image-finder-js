@@ -1,0 +1,191 @@
+/*
+ Author: Csaba Farkas
+ Student ID: R00117945
+ Date: 20/05/2016
+*/
+
+html, body, div, img, form {
+  padding: 0;
+  margin: 0;
+  border
+}
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+
+#formDiv {
+  padding-bottom: 20px;
+}
+#formDiv #findButton {
+  position: absolute;
+  width: 230px;
+  height: 60px;
+  left: 80px;
+  top: 50px;
+  font-size: 20px;
+}
+
+#formDiv input {
+  line-height: 25px;
+  margin-right: 15px;
+}
+#plusButton {
+  position: relative;
+}
+
+#formDiv .formButton {
+  width: 40px;
+  height: 25px;
+}
+
+#plusButton {
+  margin-left: 80px
+}
+
+#formDiv p {
+  position: relative;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Arial";
+  margin-top: 150px;
+  margin-left: 80px;
+}
+
+#formDiv form {
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+#formDiv div {
+  margin: 0;
+  padding: 0;
+}
+#formDiv form input {
+  margin-top: 10px;
+}
+
+#mainArea {
+  background-color: white;
+  position: absolute;
+  left: 400px;
+  top: 50px;
+  width: 65%;
+  border: 0px solid white;
+  border-radius: 25px;
+}
+
+#carousel {
+  position: relative;
+  height: 25%;
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+#inner-carousel {
+  position: absolute;
+  white-space: nowrap;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.thumbnail {
+  border: 5px solid black;
+  border-radius: 12px;
+  margin-right: 40px;
+  z-index: -1;
+  cursor: pointer;
+}
+
+.navigation-arrow {
+  height: 100%;
+}
+
+.navigation-arrow:hover {
+  cursor: pointer;
+}
+
+
+#left-arrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 999;
+  border-top-left-radius: 25px;
+}
+
+#left-arrow:active {
+  box-shadow: 2px 2px 4px green;
+}
+
+#right-arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: none;
+  z-index: 999;
+  border-top-right-radius: 25px;
+}
+
+#right-arrow:active {
+  box-shadow: -2px 2px 4px green;
+}
+
+
+#bigImgContainer {
+  position: relative;
+}
+
+#bigImg img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#bigImg #mainImage {
+  border: 10px solid black;
+  border-radius: 50px;
+}
+
+#preloader {
+  width: 20px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+/* I found the following piece of CSS in the answer of a question on Stackoverflow.
+   It rotates the preloader image infinitely.
+   Courtesy of Kirk Strobeck. Link: http://stackoverflow.com/questions/6410730/webkit-css-endless-rotation-animation-how
+   */
+
+@-webkit-keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

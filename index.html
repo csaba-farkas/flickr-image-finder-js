@@ -1,0 +1,45 @@
+<!--
+  Author: Csaba Farkas
+  Date: 20/05/2016
+    -->
+<!doctype html>
+<html>
+<head>
+    <title>Assignment 2</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script src="jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+  <div id = "container">
+  <div id = "formDiv">
+    <button id="findButton">Find Images</button>
+    <div id="formHeader">
+      <p>Tags</p>
+    </div>
+
+    <form id = "myForm">
+      <input type="text" id="staticField"/>
+    </form>
+  </div>
+  <button class="formButton" id="plusButton">+</button>
+  <div id="mainArea">
+    <div id="carousel">
+      <img class="navigation-arrow" id="left-arrow" src="img/left-arrow.png" alt="" />
+      <div id="inner-carousel"></div>
+      <img class="navigation-arrow" id="right-arrow" src="img/right-arrow.png" alt="" />
+    </div>
+    <div id="bigImgContainer">
+      <div id="bigImg"></div>
+    </div>
+  </div>
+  </div>
+  </div>
+</body>
+</html>
